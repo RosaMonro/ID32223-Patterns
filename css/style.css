@@ -1,7 +1,7 @@
 body {
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: #1e1e1e;
+  font-family: 'Lato', sans-serif;
+  color: #1C1C1E;
   background-color: #e1e1e1;
   font-weight: 400;
 }
@@ -49,13 +49,13 @@ button,
 .btn {
   display: inline-block;
   padding: 0 16px;
-  background-color: #9D033A;
+  background-color: #AB0232;
   text-decoration: none;
   color: white;
   border: 1px solid #a2a2a2;
   line-height: 2;
   text-transform: uppercase;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 1rem;
   letter-spacing: 2px;
@@ -65,7 +65,7 @@ button,
 
 button:hover,
 .btn:hover {
-  background-color: #C80449;
+  background-color: #CA023B;
 }
 
 .btn--secondary {
@@ -88,31 +88,31 @@ code {
 
 /* Colors */
 .color-fuchsia {
-  color: #9D033A;
+  color: #AB0232;
 }
 .bg-color-fuchsia {
-  background-color: #9D033A;
+  background-color: #AB0232;
 }
 
 .color-fuchsia-3 {
-  color: #C80449;
+  color: #CA023B;
 }
 .bg-color-fuchsia-3 {
-  background-color: #C80449;
+  background-color: #CA023B;
 }
 
 .color-pink {
-  color: #FEECF3;
+  color: #FFEBF0;
 }
 .bg-color-pink {
-  background-color: #FEECF3;
+  background-color: #FFEBF0;
 }
 
 .color-pink-3 {
-  color: #FFF8FB;
+  color: #FFF6F8;
 }
 .bg-color-pink-3 {
-  background-color: #FFF8FB;
+  background-color: #FFF6F8;
 }
 
 .color-grey {
