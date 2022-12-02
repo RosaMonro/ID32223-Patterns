@@ -5,21 +5,25 @@ body {
   
   main > h1 {
     text-align: center;
-    font-weight: 300;
+    font-weight: 200;
     text-decoration: overline underline;
   }
   
   main {
     background-color: #FFFFFF;
     padding: 10px 40px 25px;
-    box-sizing: border-box; 
-    width: 40%; 
-    margin: 0 30% 0; 
+    box-sizing: border-box; /*si no pongo esto, cuando aumente el padding, la caja blanca crecerá y dejará de estar centrada (tendría q ajustar el margin)*/
+    width: 40%; /*le he dicho que ocupe el 40% de su padre (body)*/
+    margin: 0 30% 0; /*le he dicho que se sitúe al 30% del espacio del padre, pq sumado a los otros 30 y a los 40 que mide el div, suman 100*/
     border-radius: 15px;
   }
   
+  .title {
+      text-decoration: underline;
+  }
+  
   div {
-    display: inline-block; 
+    display: inline-block; /*es como si fueran inline PERO respeta el ancho y el alto.*/
     text-align: center;
     border-radius: 15px;
     margin: 10px;
@@ -55,4 +59,29 @@ body {
   
   .font {
     font-famlily: 'Lato', sans-serif;
+  }
+  
+  button, a {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #AB0232;
+    padding: 10px 25px;
+    font-famlily: 'Lato', sans-serif;
+    font-size: 12;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  
+  .secondary {
+    background-color: #DFDFE1;
+    color: #1C1C1E;
+  }
+
+  button:hover, a:hover {
+    background-color: #CA023B;
   }
