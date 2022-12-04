@@ -12,9 +12,10 @@ body {
   main {
     background-color: #FFFFFF;
     padding: 10px 40px 25px;
-    box-sizing: border-box; 
-    width: 40%; 
-    margin: 0 30% 0; 
+    box-sizing: border-box; /*si no pongo esto, cuando aumente el padding, la caja blanca crecerá y dejará de estar centrada (tendría q ajustar el margin)*/
+    width: 40%; /*le he dicho que ocupe el 40% de su padre (body)*/
+    margin: 0 30% 0; /*le he dicho que se sitúe al 30% del espacio del padre, pq sumado a los otros 30 y a los 40 que mide el div, suman 100*/
+    border-radius: 15px;
   }
   
   .title {
@@ -22,7 +23,7 @@ body {
   }
   
   div {
-    display: inline-block;
+    display: inline-block; /*es como si fueran inline PERO respeta el ancho y el alto.*/
     text-align: center;
     border-radius: 15px;
     margin: 10px;
@@ -60,7 +61,7 @@ body {
     font-famlily: 'Lato', sans-serif;
   }
   
-  button, a {
+  button, a, input[type="submit"] {
     display: inline-block;
     text-decoration: none;
     border: none;
@@ -80,12 +81,46 @@ body {
     background-color: #DFDFE1;
     color: #1C1C1E;
   }
-
-  button:hover, a:hover {
+  
+  button:hover, a:hover, input[type="submit"]:hover {
     background-color: #CA023B;
   }
-
+  
   .secondary:hover {
     background-color: #FFFFFF;
     border: #DFDFE1 1px solid;
+  }
+  
+  legend {
+    font-weight: 800;
+  }
+  
+  /*cómo puedo hacer que el botón aparezca a la derecha dentro del fieldset?*/
+  
+  form {
+    box-sizing: border-box;  
+    width: 90%;
+    margin: 0 5% 0;
+    padding: 10px 20px;
+    border: 3px solid #AB0232;
+    border-radius: 38px;
+  }
+  
+  .form, textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra ya que por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 1em;
+    font-famlily: 'Lato', sans-serif;
+    /* Tamaño uniforme del campo de texto */
+    box-sizing: border-box;
+    width: 100%;
+    /* Hacer coincidir los bordes del campo del formulario */
+    border: 1px solid silver;
+  }
+  
+  [type="checkbox"]:checked {
+     background-color: #AB0232; /*no consigo que me cambie de color*/
+  }
+
+  [type="submit"] {
+    margin: 15px 300px;
   }
