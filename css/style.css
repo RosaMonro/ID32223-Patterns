@@ -91,13 +91,7 @@ body {
     background-color: #FFFFFF;
     border: #DFDFE1 1px solid;
   }
-  
-  legend {
-    font-weight: 800;
-  }
-  
-  /*cómo puedo hacer que el botón aparezca a la derecha dentro del fieldset?*/
-  
+    
   form {
     box-sizing: border-box;  
     width: 90%;
@@ -119,9 +113,9 @@ body {
   }
   
   [type="checkbox"]:checked {
-     background-color: #AB0232; /*no consigo que me cambie de color*/
+    box-shadow: 0 0 0 3px #AB0232;
   }
 
   [type="submit"] {
-    margin: 15px 300px; /*yo creo que esto es un apaño mal hecho pq está hehco a ojo*/
+    margin: 15px 300px; /*esto es un apaño mal hecho pq está hehco a ojo*/
   }
